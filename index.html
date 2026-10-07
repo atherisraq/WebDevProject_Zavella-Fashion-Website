@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zavella — Minimal, elegant, and modern fashion store for trendsetters. Shop clothing, shoes, and luxury essentials.">
+  <title>ZAVELLA | Modern & Minimal Fashion E-Commerce</title>
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" role="region" aria-label="Special Offers">
+    <p>✦ FREE SHIPPING ON ORDERS OVER $50 &amp; COMPLIMENTARY 30-DAY RETURNS ✦</p>
+  </aside>
+
+  <!-- Main Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Mobile Menu Toggle Button (Pure CSS checkbox trick) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Zavella Homepage">ZAVELLA</a>
+
+      <!-- Primary Navigation -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#new" class="nav-link">New Arrivals</a></li>
+          <li class="nav-item"><a href="#women" class="nav-link">Women</a></li>
+          <li class="nav-item"><a href="#men" class="nav-link">Men</a></li>
+          <li class="nav-item"><a href="#clothing" class="nav-link">Clothing</a></li>
+          <li class="nav-item"><a href="#shoes" class="nav-link">Shoes</a></li>
+          <li class="nav-item"><a href="#accessories" class="nav-link">Accessories</a></li>
+          <li class="nav-item"><a href="#collections" class="nav-link">Collections</a></li>
+          <li class="nav-item"><a href="#sale" class="nav-link nav-link--highlight">Sale</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utility Icons -->
+      <div class="header-actions">
+        <a href="#search" class="action-btn" title="Search" aria-label="Search Catalog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </a>
+        <a href="#wishlist" class="action-btn" title="Wishlist" aria-label="Saved Items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="badge">2</span>
+        </a>
+        <a href="#account" class="action-btn" title="Account" aria-label="Customer Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </a>
+        <a href="#cart" class="action-btn action-btn--cart" title="Shopping Cart" aria-label="Cart (3 items)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="badge">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <span class="hero-subtitle">AUTUMN / WINTER 2026 EDITION</span>
+        <h1 id="hero-title" class="hero-title">Timeless Simplicity, Defined by You.</h1>
+        <p class="hero-desc">Elevate your daily routine with sustainably crafted silhouettes, refined natural textiles, and effortless modern tailoring.</p>
+        <div class="hero-cta-group">
+          <a href="#featured" class="btn btn-primary">Shop The Collection</a>
+          <a href="#categories" class="btn btn-secondary">Explore Lookbook</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <figure class="hero-figure">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" alt="Model wearing Zavella soft beige wool coat and minimal gold jewelry" class="hero-img">
+          <figcaption class="hero-badge-tag">No. 01 — Heavy Melton Wool Coat</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="perks-strip" aria-label="Brand Guarantees">
+      <div class="perks-container">
+        <div class="perk-item">
+          <span class="perk-icon">✦</span>
+          <div>
+            <h3>Ethical Craftsmanship</h3>
+            <p>100% certified organic and traceable materials</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span class="perk-icon">✦</span>
+          <div>
+            <h3>Express Delivery</h3>
+            <p>Free worldwide shipping over $50</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span class="perk-icon">✦</span>
+          <div>
+            <h3>Effortless Exchange</h3>
+            <p>30 days doorstep return service</p>
+          </div>
+        </div>
+        <div class="perk-item">
+          <span class="perk-icon">✦</span>
+          <div>
+            <h3>Secure Checkout</h3>
+            <p>Protected by 256-bit encrypted gateways</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Categories -->
+    <section id="categories" class="section categories-section" aria-labelledby="cat-title">
+      <div class="section-header">
+        <span class="section-tag">CURATED DEPARTMENTS</span>
+        <h2 id="cat-title" class="section-title">Shop by Category</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="categories-grid">
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Women's tailored fashion" class="category-img">
+          <div class="category-overlay">
+            <h3>Womenswear</h3>
+            <p>Tailored blazers, fluid knitwear &amp; slip dresses</p>
+            <a href="#women" class="category-link">Discover Range &rarr;</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Men's casual tailoring" class="category-img">
+          <div class="category-overlay">
+            <h3>Menswear</h3>
+            <p>Overcoats, selvedge denim &amp; structured shirts</p>
+            <a href="#men" class="category-link">Discover Range &rarr;</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" alt="Minimalist artisan footwear" class="category-img">
+          <div class="category-overlay">
+            <h3>Footwear</h3>
+            <p>Handcrafted leather boots, mules &amp; trainers</p>
+            <a href="#shoes" class="category-link">Discover Range &rarr;</a>
+          </div>
+        </article>
+
+        <article class="category-card">
+          <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80" alt="Warm gold fashion accessories and jewelry" class="category-img">
+          <div class="category-overlay">
+            <h3>Accessories</h3>
+            <p>Sculptural gold rings, leather belts &amp; scarves</p>
+            <a href="#accessories" class="category-link">Discover Range &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Featured Products & Store Filter Demo -->
+    <section id="featured" class="section products-section" aria-labelledby="prod-heading">
+      <div class="section-header">
+        <span class="section-tag">IN DEMAND NOW</span>
+        <h2 id="prod-heading" class="section-title">New Season Arrivals</h2>
+        <p class="section-subtitle">Sculpted forms, gentle palettes, and day-to-night versatility.</p>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Pure CSS category filter bar -->
+      <nav class="filter-tabs" aria-label="Product Filtering">
+        <a href="#all" class="filter-tab active">All Pieces</a>
+        <a href="#tab-coats" class="filter-tab">Outerwear</a>
+        <a href="#tab-knits" class="filter-tab">Knitwear</a>
+        <a href="#tab-acc" class="filter-tab">Shoes &amp; Acc</a>
+      </nav>
+
+      <div class="product-grid">
+        <!-- Product Card 1 -->
+        <article class="product-card">
+          <div class="product-media">
+            <span class="product-flag">NEW</span>
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=700&q=80" alt="Beige rib-knit wool sweater" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Knitwear</span>
+            <h3 class="product-title"><a href="#">Ribbed Cashmere Turtleneck</a></h3>
+            <div class="product-price">
+              <span class="price-current">$129.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 2 -->
+        <article class="product-card">
+          <div class="product-media">
+            <span class="product-flag product-flag--sale">-25%</span>
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80" alt="Brown leather trench coat" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Outerwear</span>
+            <h3 class="product-title"><a href="#">Minimalist Leather Trench</a></h3>
+            <div class="product-price">
+              <span class="price-current">$240.00</span>
+              <span class="price-old">$320.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 3 -->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=700&q=80" alt="Sand tailored pleated trousers" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Clothing</span>
+            <h3 class="product-title"><a href="#">Pleated Relaxed Wide Trousers</a></h3>
+            <div class="product-price">
+              <span class="price-current">$89.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 4 -->
+        <article class="product-card">
+          <div class="product-media">
+            <span class="product-flag">ORGANIC</span>
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=80" alt="Italian leather block-heel mules" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Shoes</span>
+            <h3 class="product-title"><a href="#">Sienna Sculpted Heel Mule</a></h3>
+            <div class="product-price">
+              <span class="price-current">$145.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 5 -->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80" alt="Gold organic form chain necklace" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Jewelry</span>
+            <h3 class="product-title"><a href="#">Aura 18k Gold Plated Link</a></h3>
+            <div class="product-price">
+              <span class="price-current">$72.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 6 -->
+        <article class="product-card">
+          <div class="product-media">
+            <span class="product-flag product-flag--sale">HOT</span>
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Smooth structured crossbody leather bag" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Accessories</span>
+            <h3 class="product-title"><a href="#">Palermo Half-Moon Saddle Bag</a></h3>
+            <div class="product-price">
+              <span class="price-current">$165.00</span>
+              <span class="price-old">$195.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 7 -->
+        <article class="product-card">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=700&q=80" alt="White heavy cotton oversized shirt" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Tops</span>
+            <h3 class="product-title"><a href="#">Poplin Crisp Boy-Shirt</a></h3>
+            <div class="product-price">
+              <span class="price-current">$78.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 8 -->
+        <article class="product-card">
+          <div class="product-media">
+            <span class="product-flag">NEW</span>
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80" alt="Heavy brushed wool double breasted blazer" class="product-img">
+            <div class="product-hover-actions">
+              <a href="#cart" class="quick-add-btn">Add to Bag</a>
+              <a href="#wishlist" class="quick-wish-btn" aria-label="Add to Wishlist">♡</a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Outerwear</span>
+            <h3 class="product-title"><a href="#">Structured Wool Tux Jacket</a></h3>
+            <div class="product-price">
+              <span class="price-current">$215.00</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="center-btn-wrap">
+        <a href="#all-products" class="btn btn-outline">View All 142 Products</a>
+      </div>
+    </section>
+
+    <!-- Editorial Lookbook Banner -->
+    <section class="lookbook-banner" aria-labelledby="lookbook-title">
+      <div class="lookbook-card">
+        <div class="lookbook-text">
+          <span class="lookbook-tag">EDITORIAL LOOKBOOK</span>
+          <h2 id="lookbook-title">Quiet Confidence, Effortless Form</h2>
+          <p>Created for discerning young creatives who value versatile longevity over fleeting trends. We focus on neutral palettes that match every layer of your life.</p>
+          <ul class="lookbook-list">
+            <li>Zero-waste pattern drafting</li>
+            <li>Plant-based organic dyes</li>
+            <li>Limited batch release</li>
+          </ul>
+          <a href="#lookbook" class="btn btn-primary">Read The Journal</a>
+        </div>
+        <div class="lookbook-images">
+          <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80" alt="Editorial model posing gracefully in cream knitted dress" class="lookbook-img lookbook-img--large">
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews / Social Proof -->
+    <section class="section reviews-section" aria-labelledby="reviews-title">
+      <div class="section-header">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2 id="reviews-title" class="section-title">Worn &amp; Loved Around the World</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote class="review-quote">"The heavy wool coat is breathtaking. The drape, warmth, and cut feel like an bespoke atelier garment at a fraction of the cost."</blockquote>
+          <footer class="review-author">
+            <strong>Elena Vance</strong> — Paris, FR
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote class="review-quote">"Finding premium clothes that don't compromise on ethics or modern aesthetics is hard. Zavella delivers perfection in every seam."</blockquote>
+          <footer class="review-author">
+            <strong>Marcus Sterling</strong> — London, UK
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <blockquote class="review-quote">"Seamless checkout and lightning-fast delivery to New York. The unboxing experience felt like receiving a high-end luxury gift."</blockquote>
+          <footer class="review-author">
+            <strong>Chloe Chen</strong> — Brooklyn, NY
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="newsletter-inner">
+        <span class="section-tag">ZAVELLA INNER CIRCLE</span>
+        <h2 id="newsletter-heading">Receive 15% Off Your First Order</h2>
+        <p>Subscribe for exclusive access to seasonal drops, intimate sample sales, and curated fashion editorial letters.</p>
+        
+        <form class="newsletter-form" action="#" method="get">
+          <input type="email" placeholder="Enter your email address" aria-label="Email address" required class="newsletter-input">
+          <button type="submit" class="btn btn-primary">Join Club</button>
+        </form>
+        <small class="newsletter-terms">By subscribing, you agree to our Privacy Policy. Unsubscribe anytime.</small>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-column footer-brand-info">
+        <h3 class="footer-logo">ZAVELLA</h3>
+        <p class="footer-desc">A modern fashion sanctuary prioritizing intentional silhouettes, accessible luxury, and enduring elegance for young adults globally.</p>
+        <div class="footer-socials" aria-label="Social Media links">
+          <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+          <a href="#" aria-label="Pinterest" class="social-link">Pinterest</a>
+          <a href="#" aria-label="TikTok" class="social-link">TikTok</a>
+          <a href="#" aria-label="YouTube" class="social-link">YouTube</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#new">New Arrivals</a></li>
+          <li><a href="#women">Women's Wardrobe</a></li>
+          <li><a href="#men">Men's Essentials</a></li>
+          <li><a href="#shoes">Footwear &amp; Mules</a></li>
+          <li><a href="#accessories">Jewelry &amp; Leather</a></li>
+          <li><a href="#sale">Special Archive Sale</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Client Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Shipping &amp; Delivery</a></li>
+          <li><a href="#">Returns &amp; Exchanges</a></li>
+          <li><a href="#">Size &amp; Fit Guide</a></li>
+          <li><a href="#">Sustainability Commitment</a></li>
+          <li><a href="#">Contact Concierge</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Store Hours &amp; Atelier</h4>
+        <address class="footer-address">
+          Flagship Atelier:<br>
+          482 Mercer Street, Soho<br>
+          New York, NY 10013<br><br>
+          Monday – Saturday: 10:00 – 19:00<br>
+          Sunday: 11:00 – 18:00
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2026 ZAVELLA Fashion Ltd. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
